@@ -249,7 +249,7 @@ class QualitativeFeedbackGP:
 
 
 def Plot_TwoDim(GP):
-    # Plotting the two dimensional estimations of GP model
+    # Plotting the two-dimensional estimations of the GP model
 
     size = 20  # resolution of the plot
 
@@ -284,10 +284,10 @@ def Plot_TwoDim(GP):
     #  Plotting
 
     # PLOTTING
-    fig = plt.figure(figsize=(16, 6))
+    fig = plt.figure(figsize=(10, 6))
     # row column
-    ax11 = fig.add_subplot(2, 5, 1, projection='3d')
-    ax12 = fig.add_subplot(2, 5, 2, projection='3d')
+    ax11 = fig.add_subplot(1, 2, 1, projection='3d')
+    ax12 = fig.add_subplot(1, 2, 2, projection='3d')
 
     ax11.plot_surface(X1, X2, Mean, rstride=1, cstride=1, antialiased=False,
                       cmap='coolwarm', edgecolor='none', vmin=-1, vmax=1)
